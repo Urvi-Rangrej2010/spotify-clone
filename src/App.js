@@ -3,9 +3,10 @@ import "./App.css";
 import { LeftMenu } from "./Components/LeftMenu";
 import { MainContainer } from "./Components/MainContainer";
 import { RightMenu } from "./Components/RightMenu";
-
+import { BrowserRouter, Route, Link } from "react-router-dom"
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <div className=""></div>
       <LeftMenu />
@@ -14,6 +15,7 @@ function App() {
 
       <div className="background"></div>
     </div>
+    </BrowserRouter>
   );
 }
 

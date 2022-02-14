@@ -1,6 +1,8 @@
 import { BsFillHouseFill, BsJournalAlbum } from "react-icons/bs";
 import { BiPulse } from "react-icons/bi";
 import { FaBroadcastTower, FaMicrophoneAlt, FaPodcast } from "react-icons/fa";
+import ArtistList from "./ArtistList";
+import AlbumList from "./AlbumList";
 
 const MenuList = [
   {
@@ -22,11 +24,14 @@ const MenuList = [
     id: 4,
     icon: <FaMicrophoneAlt />,
     name: "Artist",
+    compo:<ArtistList/>
   },
   {
     id: 5,
     icon: <BsJournalAlbum />,
     name: "Albums",
+    compo:<AlbumList/>
+
   },
   {
     id: 6,

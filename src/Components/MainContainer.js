@@ -15,7 +15,11 @@ function MainContainer() {
 
     allLi.forEach((n) => n.addEventListener("click", changePopularActive));
   }, []);
-
+useEffect(()=>{
+  fetch('https://api.spotify.com/v1/albums')
+  .then(response => response.json())
+  .then(data => console.log(data));
+},[])
   return (
     <div className="mainContainer">
       <Banner />
